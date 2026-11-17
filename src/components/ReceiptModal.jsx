@@ -6,7 +6,7 @@ import confetti from 'canvas-confetti';
 // ============================================================
 export default function ReceiptModal({ isOpen, onClose, order, onReturnToStore }) {
   
-  // Trigger Sound & Confetti effects whenever the receipt modal opens
+
   useEffect(() => {
     if (isOpen) {
 
@@ -23,7 +23,7 @@ export default function ReceiptModal({ isOpen, onClose, order, onReturnToStore }
     }
   }, [isOpen]);
 
-  // Simple Web Audio function to play a 2-tone futuristic chime
+
   const playTacticalChime = () => {
     try {
       const AudioCtx = window.AudioContext || window.webkitAudioContext;
